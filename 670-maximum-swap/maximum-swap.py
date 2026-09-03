@@ -3,8 +3,7 @@ class Solution:
         k=list(map(int,str(num)))
         v=sorted(k,reverse=True)
         d=[]
-        if v==k:
-            return int(''.join(map(str, k)))
+        
         for i in range(len(k)):
             if k[i]!=v[i]:
                 for j in range(i+1,len(k)):
